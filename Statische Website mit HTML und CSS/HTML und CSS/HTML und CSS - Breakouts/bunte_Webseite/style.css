@@ -1,0 +1,78 @@
+body {
+    background-color: #e6f7ff; /* Geänderte Hintergrundfarbe zu einem hellen Grün */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ff4500; /* Kräftiges Orange für die Überschrift */
+    text-align: center;
+}
+
+h2 {
+    color: #ff4500; /* Kräftiges Orange für die Überschrift */
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 250px; /* Angepasste Bildgröße */
+    border: 3px solid #ff4500; /* Rahmen um das Bild */
+    border-radius: 10px;
+}
+
+div {
+    background-color: #ffcccb; /* Helles Rot für den Hintergrund */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+ul {
+    color: #4a86e8; /* Blaue Farbe für die Listenpunkte */
+    list-style-type: square; /* Quadratische Listenpunkte */
+    text-align: center;
+    padding-left: 0; /* Entfernt den Standard-Einzug */
+}
+
+li {
+    margin: 10px 0; /* Fügt etwas Abstand zwischen den Listenelementen hinzu */
+}
+.bonus-section {
+    background-color: #f0e68c; /* Khaki-Farbe für den Hintergrund */
+    font-family: 'Roboto', sans-serif; /* Neue Schriftart */
+    padding: 30px;
+    margin: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bonus-section h1 {
+    color: #f908d5; /* Dunkelgrüne Farbe für die Überschrift */
+    text-align: center;
+}
+.bonus-section h3 {
+    color: #f91008; /* Dunkelgrüne Farbe für die Überschrift */
+    text-align: center;
+
+.bonus-section img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: none;
+    border-radius: 15px;
+}
+
+.bonus-section p {
+    color: #4a4a4a;
+    font-size: 16px;
+    line-height: 1.6;
+}

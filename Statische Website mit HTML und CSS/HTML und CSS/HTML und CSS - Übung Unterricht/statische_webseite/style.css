@@ -1,0 +1,25 @@
+body {
+    background-color: coral;
+}
+
+h1 {
+    color: darkgreen;
+    text-align: center;
+}
+
+h2 {
+    color: greenyellow;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 0%;
+}
