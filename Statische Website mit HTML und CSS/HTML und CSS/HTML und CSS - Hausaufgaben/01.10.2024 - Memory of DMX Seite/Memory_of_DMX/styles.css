@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #121212;
   color: #fff;
   padding: 10px 0;
   text-align: center;
@@ -26,7 +26,7 @@ section {
 }
 
 footer {
-  background-color: #333;
+  background-color: #121212;
   color: #fff;
   text-align: center;
   padding: 10px 0;
@@ -80,4 +80,15 @@ footer {
 
 .album:hover {
   transform: scale(1.05);
+}
+/* Disclog Farbe */
+a {
+  color: #b0740b; /* Setzt die Linkfarbe auf Weiß */
+  text-decoration: none; /* Entfernt die Unterstreichung */
+  text-shadow: 1px 1px 2px #000; /* Fügt einen leichten Schatten hinzu */
+}
+
+a:hover {
+  color: #ccc; /* Setzt die Linkfarbe beim Hover auf ein helleres Grau */
+  text-shadow: 2px 2px 4px #000; /* Verstärkt den Schatten beim Hover */
 }
