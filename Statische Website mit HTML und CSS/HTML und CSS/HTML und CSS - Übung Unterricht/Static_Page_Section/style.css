@@ -64,6 +64,14 @@ section p {
     text-align: center;
 }
 
+img {
+    padding: 20px;
+    background-color: #ECF0F1;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Footer */
 footer {
     background-color: #2C3E50;
