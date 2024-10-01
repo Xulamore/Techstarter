@@ -1,42 +1,83 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #000; /* Hintergrund schwarz */
-    color: #fff; /* Text weiß */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #000; /* Hintergrund schwarz */
+  color: #fff; /* Text weiß */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
 
 nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
 }
 
 section {
-    padding: 20px;
-    margin: 10px;
+  padding: 20px;
+  margin: 10px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 .container {
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Album Section */
+
+.album-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Genau 4 Spalten */
+  gap: 2em;
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.album {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.album img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.album h3 {
+  margin: 1em 0;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.album a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.album:hover {
+  transform: scale(1.05);
 }
