@@ -44,9 +44,33 @@
     <footer>
         <div class="container">
             <p>© 2024 Memory of DMX</p>
-            <a href="main/de_data_privacy.html">Datenschutz</a> | 
-            <a href="main/de_terms_of_use.html">Nutzungsbedingungen</a>
         </div>
     </footer>
+    
+        <!-- Cookie-Banner -->
+        <div id="cookie-banner" style="display: none;">
+            <p>Memory of DMX does not collect any cookies! <button id="accept-cookies">OK</button></p>
+        </div>
+       
+        <script>
+            // Cookie-Banner anzeigen
+            document.getElementById('cookie-banner').style.display = 'block';
+    
+            // Deaktiviere die Navigation
+            const navLinks = document.querySelectorAll('#navigation a');
+            navLinks.forEach(link => {
+                link.classList.add('disabled'); // Fügt die Klasse 'disabled' hinzu
+            });
+    
+            // Event-Listener für den Button
+            document.getElementById('accept-cookies').addEventListener('click', function() {
+                document.getElementById('cookie-banner').style.display = 'none';
+                navLinks.forEach(link => {
+                    link.classList.remove('disabled'); // Entfernt die Klasse 'disabled'
+                });
+            });
+        </script>
+    </body>
+    </html>
 </body>
 </html>
