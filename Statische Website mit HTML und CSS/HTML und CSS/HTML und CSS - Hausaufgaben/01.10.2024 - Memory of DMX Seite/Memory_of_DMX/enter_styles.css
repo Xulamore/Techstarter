@@ -1,0 +1,111 @@
+html {
+  overflow-y: scroll;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #121212;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 825px;
+  margin: auto;
+  width: 100%;
+}
+
+#diskografie {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.album-section {
+  display: flex;
+  justify-content: center;
+  gap: 7em;
+  padding:3%;
+  max-width: 800;
+  margin: right;
+}
+
+.album {
+  text-align: center;
+  background-color: transparent;
+  transition: transform 0.1s ease;
+}
+
+.album img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+.album:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.spacer {
+  flex-grow: 1;
+
+}
+
+.div.flag {
+  margin: auto;
+}
+
+
+
+/*Flag*/
+
+.flag {
+  text-align: center;
+}
+
+.flags-section {
+  display: flex;
+  justify-content: center; /* Zentriert die Flaggen horizontal */
+  gap: 10px; /* Abstand zwischen den Flaggen */
+  padding: 10px 0; /* Abstand oben und unten */
+}
+
+.flag img {
+  max-width: 220px; /* Maximale Breite der Flaggen */
+  height: auto; /* Höhe automatisch anpassen */
+  transition: transform 0.3s ease; /* Für Hover-Effekte */
+  display: block;
+}
+
+.flag:hover img {
+  transform: scale(1.1); /* Vergrößert die Flagge beim Hover */
+}
