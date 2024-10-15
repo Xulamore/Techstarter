@@ -1,23 +1,23 @@
 // for-Schleife
-function zaehleGroesserAlsSchwelle(arr, threshold) {
+function zaehleGroesserAlsSchwelle(array, schwellenwert) {
     let count = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > threshold) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > schwellenwert) {
             count++;
         }
     }
     return count;
 }
 
-const data = [10, 23, 35, 47, 52, 66, 71, 88, 90];
-console.log(zaehleGroesserAlsSchwelle(data, 50));
+const wert = [10, 23, 35, 47, 52, 66, 71, 88, 90];
+console.log(zaehleGroesserAlsSchwelle(wert, 50));
 
 // while-Schleife
-function zaehleMitWhileGroesserAlsSchwelle(arr, threshold) {
+function zaehleMitWhileGroesserAlsSchwelle(array, schwellenwert) {
     let count = 0;
     let i = 0;
-    while (i < arr.length) {
-        if (arr[i] > threshold) {
+    while (i < array.length) {
+        if (array[i] > schwellenwert) {
             count++;
         }
         i++;
@@ -25,19 +25,19 @@ function zaehleMitWhileGroesserAlsSchwelle(arr, threshold) {
     return count;
 }
 
-console.log(zaehleMitWhileGroesserAlsSchwelle(data, 50));
+console.log(zaehleMitWhileGroesserAlsSchwelle(wert, 50));
 
 // do-while-Schleife
-function zaehleMitDoWhileGroesserAlsSchwelle(arr, threshold) {
+function zaehleMitDoWhileGroesserAlsSchwelle(array, schwellenwert) {
     let count = 0;
     let i = 0;
     do {
-        if (arr[i] > threshold) {
+        if (array[i] > schwellenwert) {
             count++;
         }
         i++;
-    } while (i < arr.length);
+    } while (i < array.length);
     return count;
 }
 
-console.log(zaehleMitDoWhileGroesserAlsSchwelle(data, 50));
+console.log(zaehleMitDoWhileGroesserAlsSchwelle(wert, 50));
