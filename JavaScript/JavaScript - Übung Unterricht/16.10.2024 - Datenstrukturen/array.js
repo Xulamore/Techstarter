@@ -23,7 +23,7 @@ namen.push("Iman", "Jeffrey", "Rudi", "Markus", "Katharina");
 console.log(namen);
 console.log(zahlenArray);
 console.log(leeresArray);
-/*
+
 // Entfernen des letzten Elementes aus einem Array
 // Das letzte Element eines Arrays muss nicht angegeben werden!
 //namen.pop("Katharina");
@@ -58,8 +58,6 @@ console.log(namen);
 namen.forEach(namen => {
     console.log(namen);
 });
-
-*/
 
 // Manipulation
 let slicedNamen = namen.slice(2,5);
