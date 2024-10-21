@@ -16,8 +16,8 @@ function App() {
   return (
     <>
       <h1 className="title">Willkommen zu meiner ersten React-App</h1>
-      <h2 className="greeting">{aussage}</h2>
-      <h3 className="calculation">Das Ergebnis der Berechnung 2024 - 37 ist: {sum}</h3>
+      <h2 className="aussage">{aussage}</h2>
+      <h3 className="rechnung">Das Ergebnis der Berechnung 2024 - 37 ist: {sum}</h3>
       <button className="alert-button" onClick={showAlert}>
         Klick mich!
       </button>

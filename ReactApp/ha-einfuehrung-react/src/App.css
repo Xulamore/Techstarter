@@ -6,12 +6,12 @@ body {
   color: rgb(186, 66, 11);
 }
 
-.greeting {
+.aussage {
   color: green;
   margin-left: 90px;
 }
 
-.calculation {
+.rechnung {
   color: rgb(186, 10, 186);
   margin-left: 78px;
 }
