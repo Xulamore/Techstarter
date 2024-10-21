@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+}
+
+.title {
+  color: rgb(186, 66, 11);
+}
+
+.greeting {
+  color: green;
+  margin-left: 90px;
+}
+
+.calculation {
+  color: rgb(186, 10, 186);
+  margin-left: 78px;
+}
+
+.alert-button {
+  padding: 10px 20px;
+  background-color: rgb(197, 235, 42);
+  border: none;
+  border-radius: 5px;
+  margin-left: 230px; /* Verschiebt den Button nach rechts */
+}
