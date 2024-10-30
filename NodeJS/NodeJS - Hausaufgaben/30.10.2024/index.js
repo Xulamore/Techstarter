@@ -41,7 +41,7 @@ async function askForNewCatFact() {
 
     if (answers.getFact) {
         showCatFact();
-        console.log(chalk.yellow('Danke, dass du das Programm genutzt hast!'));
+        askForNewCatFact() // Fragt erneut, ob ein weiterer Fakt angezeigt werden soll
     } else {
         console.log(chalk.yellow('Danke, dass du das Programm genutzt hast!'));
         process.exit(0); // Programm beenden
