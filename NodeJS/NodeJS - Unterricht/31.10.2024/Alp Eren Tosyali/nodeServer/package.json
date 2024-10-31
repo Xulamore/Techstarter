@@ -1,0 +1,16 @@
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "unser super Server",
+  "main": "server.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Eren",
+  "license": "ISC",
+  "dependencies": {
+    "inspirational-quotes": "^2.0.1"
+  },
+  "type": "module"
+}
