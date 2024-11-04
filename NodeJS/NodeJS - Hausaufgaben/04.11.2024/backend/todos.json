@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Ich habe die Hausaufgabe erledigt",
+    "completed": false,
+    "id": 1
+  },
+  {
+    "title": "Ich schreibe jetzt testweise ein extra etwas längeren Eintrag um zusehen wie es im Browser dargestellt wird",
+    "completed": false,
+    "id": 2
+  },
+  {
+    "title": "Todo über den Browser hinzufügen und löschen funktioniert",
+    "completed": false,
+    "id": 3
+  }
+]

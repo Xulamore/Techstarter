@@ -1,0 +1,46 @@
+/* Allgemeines Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f7f7f7;
+    padding-top: 30px; /* Abstand von der oberen Bildschirmkante */
+}
+
+/* Überschrift */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container-Styling */
+#todo-app {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8spx rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* width: 350px; */
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  #todo-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Fügt Abstand zwischen den Listenelementen hinzu */
+}
+
+#todo-list li span {
+    flex-grow: 1; /* Lässt den Text den verfügbaren Platz einnehmen */
+    margin-right: 5px; /* Fügt Abstand zwischen dem Text und dem Button hinzu */
+}
+
+#todo-list li button {
+    margin-left: 5px; /* Fügt Abstand zwischen dem Text und dem Button hinzu */
+}
