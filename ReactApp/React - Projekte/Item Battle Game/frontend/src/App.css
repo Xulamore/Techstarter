@@ -1,0 +1,182 @@
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-create {
+  background: rgb(23, 159, 44);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-list {
+  background: rgb(174, 204, 6);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.battle-section {
+  background: rgb(163, 99, 15);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tournament-section {
+  background: rgb(15, 121, 163);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.item-card {
+  border: 1px solid #010b00;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #9fe899;
+}
+
+.battle-selection,
+.tournament-selection {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.battle-result,
+.tournament-result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e8f5e9;
+  border-radius: 4px;
+}
+
+.match {
+  border-left: 3px solid #4caf50;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}
+
+.powers {
+  color: #666;
+  font-style: italic;
+}
+
+.tournament-winner {
+  color: #4caf50;
+  border-top: 2px solid #4caf50;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+/* Neue Styles für das Turnier */
+.tournament-round {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+}
+
+.tournament-round h4 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.tournament-selection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tournament-selection button {
+  font-size: 1.1em;
+  padding: 12px 24px;
+}
+
+/* Verbesserte Lesbarkeit für Turnierergebnisse */
+.tournament-result h3 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.match p {
+  margin: 5px 0;
+}
+
+.match strong {
+  color: #2c3e50;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+  .battle-selection,
+  .tournament-selection {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .items-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+.tournament-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
