@@ -15,4 +15,4 @@ scrape_configs:
           - localhost
         labels:
           job: "express-logs"
-          __path__: /mnt/c/Users/xulam/Documents/Techstarter Dokumente/Grafana/Unterricht/08.01.25/express-logs  # Path to logs
+          __path__: /home/xulamore/Jury/VSC/Grafana/08.01.25/express-logs/logs/*.log  # Path to logs

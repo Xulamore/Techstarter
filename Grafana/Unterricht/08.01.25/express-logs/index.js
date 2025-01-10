@@ -1,27 +1,31 @@
-const express = require('express');
-const morgan = require('morgan');
+const { format, createLogger, transports} = require('winston');
+const { timestamp, printf, combine } = format;
 const path = require('path');
 const fs = require('fs');
 
-const app = express();
-const port = 3000;
+// Erstelle unser log-Verzeichnis, falls nicht vorhanden
+const logDirectory = path.join(__dirname, 'logs');
+if(!fs.existsSync(logDirectory)) {
+    fs.mkdirSync(logDirectory);
+}
 
-const accessLogStream = fs.createWriteStream(
-  path.join(__dirname, 'logs', 'access.log'),
-  { flags: 'a' });
+const own_timestamp = timestamp({ format: 'YYYY-MM-DD HH:mm:ss' })
 
-// Set up morgan to log requests in 'combined' format (common log format)
-app.use(morgan('combined', { stream: accessLogStream }));
+// Zeitangabe [level]: nachricht
+const logFormat = printf(({ level, message, timestamp}) => {
+    return `${timestamp} [${level}]: ${message}`
+})
 
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
+const logger = createLogger({
+    level: 'info',
+    format: combine(
+        own_timestamp,
+        logFormat
+    ),
+    transports: [
+        new transports.Console(),
+        new transports.File({ filename: path.join(__dirname, 'logs/app.log'), }),
+    ]
 });
 
-app.get('/error', (req, res) => {
-  throw new Error('Something went wrong!');
-});
-
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
-});
+module.exports =  logger ;
