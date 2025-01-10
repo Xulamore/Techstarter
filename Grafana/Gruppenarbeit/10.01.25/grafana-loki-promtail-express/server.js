@@ -10,10 +10,14 @@ app.get('/', (req, res) =>{
     logger.info('Wurzel Route aufgerufen');
 });
 
-app.get('/Hallo', (req, res) =>{
-    res.send('Hallo Welt');
-    console.log("Hallo Welt Route aufgerufen");
-    logger.info('Hallo Welt Route aufgerufen');
+app.get("/Hallo", (req, res) => {
+    logger.info(`Request: ${req.method} ${req.url} - Status: ${res.statusCode}`);
+    res.status(200).send("Hallo Welt");
+});
+  
+  app.get("/Error", (req, res) => {
+    res.status(404).send("Fehler");
+    logger.error(`Request: ${req.method} ${req.url} - Status: ${res.statusCode}`);
 });
 
 app.get('/Bye', (req, res) =>{
