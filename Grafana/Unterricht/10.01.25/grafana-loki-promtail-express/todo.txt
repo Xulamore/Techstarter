@@ -1,0 +1,18 @@
+(Optional) Praxis: Praxisübung in JavaScript
+
+Aufgabe:
+
+Erstelle einen eigenen Express.js Server mit zwei Endpunkten:
+
+/hello: Gibt eine 200 OK Antwort zurück. 
+/error: Gibt eine 404 Not Found Antwort zurück.
+
+Implementiere ein Logging-System, das die Anfragen an den Server protokolliert (z.B. mit Winston oder einem anderen Logging-Tool).
+
+Installiere und starte Promtail, um die Logs von deinem Express-Server zu sammeln.
+
+Setze Loki auf, um die Logs zu speichern und zu verwalten.
+
+Richte Grafana ein und verbinde es mit Loki, um die gesammelten Logs zu visualisieren.
+
+In Grafana UI nach Error filtern und Fehler anzeigen lassen (NUR FEHLER)

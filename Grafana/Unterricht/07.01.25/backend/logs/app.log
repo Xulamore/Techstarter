@@ -1,0 +1,5 @@
+2025-01-07 12:32:59 [info]: Das ist eine Info
+2025-01-07 12:32:59 [warn]: Das ist eine Warnung
+2025-01-07 12:32:59 [error]: Das ist ein Fehler
+2025-01-07 12:50:15 [info]: Server läuft auf 5001
+2025-01-07 12:54:49 [info]: Wurzel Route aufgerufen

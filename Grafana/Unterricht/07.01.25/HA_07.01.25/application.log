@@ -1,0 +1,7 @@
+2025-01-07 15:39:38 info: Bücher-API Server gestartet auf Port 5002
+2025-01-07 15:39:52 info: Bücherliste wurde abgerufen
+2025-01-07 15:40:02 error: Fehlgeschlagener Versuch ein Buch zu erstellen: Fehlende Pflichtfelder
+2025-01-07 15:40:10 info: Neues Buch erstellt: "Der Herr der Ringe" von J.R.R. Tolkien
+2025-01-07 15:40:40 info: Buch mit ID 1 wurde abgerufen
+2025-01-07 15:41:58 info: Buch aktualisiert: "1984" → "1984 - Neuauflage"
+2025-01-07 15:42:14 info: Buch gelöscht: "Schöne neue Welt"
